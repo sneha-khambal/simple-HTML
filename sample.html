@@ -42,6 +42,7 @@
     .list ul li {
       padding: 25px;
       padding-right: 40px;
+      cursor: pointer;
 
     }
 
@@ -64,6 +65,8 @@
       box-shadow: 1px 1px white;
       color: black;
       padding-left: 15px;
+
+     
     }
 
     .uploadVedios {
@@ -72,6 +75,7 @@
       padding: 40px 30px 5px 5px;
       margin-top: 5px;
       background-color: white;
+      cursor: pointer;
     }
 
     .content strong {
@@ -125,7 +129,7 @@
       display: none;
     }
 
-
+/* responsive design */
     @media screen and (max-width:600px) {
       .play {
         margin-top: 35%;
@@ -226,7 +230,7 @@
 
     <div class="content">
       
-      <input type="text" class="input" placeholder="Insert URL here">
+      <input type="text" class="input" placeholder="Insert URL here" readonly >
 
       <strong>or</strong>
 
