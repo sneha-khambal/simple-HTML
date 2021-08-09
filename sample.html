@@ -1,144 +1,242 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-     <!-- font Awsome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <style>
-         *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         }
-        .content{
-            margin-top: 13%;
-          margin-right: 70%;
-           margin-left: 5%;
-            display: flex;
-            
-            align-items:flex-start;
-            flex-direction: column;
-            
-        }
-        .list{
-            margin-top: 0;
-            z-index: 1;
-         
-   
-           display: flex;
-           height: 625px;
-        }
-        .list ul {
-            list-style: none;
-          
-         background-color: white;
-         box-shadow: 5px 10px 8px 10px #e4e1e1;
-       }
-        .list ul li{
- padding: 25px;
- padding-right: 40px;
- 
-  }
-  
-  .list ul li:hover{
-background-color: rgb(204, 203, 255);
-border-left: 2px solid blue;
-  }
-  .input{
- display: block;
- margin-top: 0px;
- border-radius: 7px;
- width: 900px;
- height: 30px;
- border:1px solid white;
- box-shadow:1px 1px white;
- color: black;
- padding-left:15px;
- }
+<!DOCTYPE html>
+<html lang="en">
 
-  .uploadVedios{
-     height: 150px;
-     width: 150px;
-     padding: 35%;
-     margin-top: 10%;
-   background-color: white; 
-  }
-  .content strong{
-     margin-top: 3%;
-     margin-left: 40%;
-     font-weight: 900;
-    
-  }
-  .list .header{
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .content {
+      margin-top: 13%;
+      margin-right: 70%;
+      margin-left: 5%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+    }
+
+    .list {
+      margin-top: 0;
+      z-index: 1;
+      display: flex;
+      height: 655px;
+    }
+
+    .list ul {
+      list-style: none;
+      background-color: white;
+      box-shadow: 5px 10px 8px 10px #e4e1e1;
+    }
+
+    .list ul li {
+      padding: 25px;
+      padding-right: 40px;
+
+    }
+
+    .list ul li:nth-child(1) {
+      margin-top: -25px;
+    }
+
+    .list ul li:nth-child(3) {
+      background-color: rgb(204, 203, 255);
+      border-left: 2px solid blue;
+    }
+
+    .input {
+      display: block;
+      margin-top: 0px;
+      border-radius: 7px;
+      width: 900px;
+      height: 30px;
+      border: 1px solid white;
+      box-shadow: 1px 1px white;
+      color: black;
+      padding-left: 15px;
+    }
+
+    .uploadVedios {
+      height: 150px;
+      width: 150px;
+      padding: 40px 30px 5px 5px;
+      margin-top: 5px;
+      background-color: white;
+    }
+
+    .content strong {
+      margin-top: 3%;
+      margin-left: 40%;
+      font-weight: 900;
+
+    }
+
+    .list .header {
       clear: both;
       width: 100%;
-     padding: 40px;
+      padding: 40px;
       background-color: white;
       position: absolute;
       z-index: -1;
-  }
-  .fa-play{
-    transform: rotate(180deg);
-   }
- 
-  .list ul .list1{
-     padding-top: 50px;
-  }
-  .play{
-    margin-top: 7.5%;
-    display: flex;
-    margin-left: 4%;
-    color: cadetblue;
+    }
 
-  }
-  #vedios{
-    margin-left: 5px;
-    
-  }
-  .list-text{
- display: block;
-    color: cadetblue;
-    
-     
-  }
-  .icon{
-    
-    
-    color:cadetblue;
-  }
+    .fa-play {
+      transform: rotate(180deg);
+    }
 
- 
-         
-     </style>
-     <!-- <i class="fa fa-user" aria-hidden="true"></i> 
-    <i class="fa fa-list-alt" aria-hidden="true"></i>
-<i class="fa fa-play" aria-hidden="true"></i>
-<i class="fa fa-cog" aria-hidden="true"></i>-->
- </head>
- <body  style="background-color: rgb(240, 234, 255);" >
-   
+    .list ul .list1 {
+      padding-top: 50px;
+    }
+
+    .play {
+      margin-top: 8%;
+      display: flex;
+      margin-left: 4%;
+      color: cadetblue;
+
+    }
+
+    #vedios {
+      margin-left: 5px;
+
+    }
+
+    .list-text {
+      display: block;
+      color: cadetblue;
+    }
+
+    .icon {
+      color: cadetblue;
+    }
+
+
+    .header span {
+      display: none;
+    }
+
+
+    @media screen and (max-width:600px) {
+      .play {
+        margin-top: 35%;
+        font-size: medium;
+      }
+
+      .content {
+        margin-top: 35%;
+        margin-left: -40px;
+      }
+
+      .input {
+        display: block;
+        margin-top: 15%;
+        border-radius: 3px;
+        width: 250px;
+        height: 20px;
+      }
+
+      .uploadVedios {
+        height: 100px;
+        width: 100px;
+
+      }
+
+      .list ul {
+        display: none;
+      }
+
+      .header {
+        padding: 0;
+        height: 50px;
+
+      }
+
+      .header div {
+        margin-top: -15%;
+        margin-left: -10%;
+
+      }
+
+      .header span {
+        display: block;
+        margin-top: 5px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        display: block;
+        padding: 2px;
+
+      }
+
+      .header span:nth-child(2) {
+        font-size: 20px;
+        font-weight: 700;
+        color: cadetblue;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body style="background-color: rgb(240, 234, 255);">
+
+
   <div class="list">
-    <div class="header list1 " > </div>
-      <ul>
-        <li class="list-item list1"  > </li>
-          <li class="list-item"><i class="fa fa-user icon " aria-hidden="true"><small class="list-text">Students</small></i></li>
-          <li class="list-item"><i class="fa fa-list-alt icon" aria-hidden="true"><small class="list-text">Lesson plan</small></i></li>
-          
-          <li class="list-item"><i class="fa fa-cog icon" aria-hidden="true"><small class="list-text">Settings</small></i></li>
-      </ul>
-     <div class="play"> <span><i class="fa fa-play" aria-hidden="true"> </i></span> <span id="vedios">Vedios</span></div>
-      <div class="content">
-       <input type="text" class="input" placeholder="Insert URL here">
-        <strong>or</strong>
-        <div>
-            <div class="uploadVedios">Upload</div>
+    <!-- header section -->
+    <div class="header list1 ">
+      <div>
+        <span><i class="fa fa-user icon " aria-hidden="true"></i></span>
+        <span><i class="fa fa-list-alt icon" aria-hidden="true"></i></span>
+        <span> <i class="fa fa-cog icon" aria-hidden="true"> </i></span>
+      </div>
+    </div>
+    <!-- list content-->
+    <ul>
+
+      <li class="list-item list1">
+        <div
+          style="background-color: cadetblue; height:30px; width:30px;padding: 8px; border: 2px solid white; box-shadow: 2px 2px 2px cadetblue;">
+          <div
+            style="background-color: white; height:30px; width:30px;padding: 8px; box-shadow: 2px 2px 2px cadetblue;">
+            <div
+              style="border-radius: 100%; background-color:cadetblue;height:30px; width:30px; border: 2px solid white; box-shadow: 2px 2px 2px cadetblue">
+            </div>
+          </div>
         </div>
+      </li>
+      <li class="list-item"><i class="fa fa-user icon " aria-hidden="true"><small class="list-text">Students</small></i>
+      </li>
+      <li class="list-item"> <i class="fa fa-list-alt icon" aria-hidden="true"><small class="list-text">Lesson plan</small></i></li>
+
+      <li class="list-item"><i class="fa fa-cog icon" aria-hidden="true"><small class="list-text">Settings</small></i> </li>
+
+    </ul>
+    <!-- vedio content -->
+    <div class="play"> <span><i class="fa fa-play" aria-hidden="true"> </i></span> <span id="vedios">Vedios</span></div>
+
+    <div class="content">
+      
+      <input type="text" class="input" placeholder="Insert URL here">
+
+      <strong>or</strong>
+
+      <div class="uploadVedios">
+
+        <strong> Upload</strong>
+      </div>
     </div>
   </div>
-   
- </body>
- </html>
+
+</body>
+
+</html>
